@@ -77,6 +77,7 @@ client.on('message', msg => {
     }
 });
 client.on('message', message => {
+let prefix = 's!';
     if (message.content.startsWith(prefix + "setgame")) {
         if (message.member.id != '420334391286300673') {
             return message.channel.sendMessage("Seul un administrateur du bot peut exécuter cette commande :warning:")
