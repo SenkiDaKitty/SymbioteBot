@@ -1,1 +1,1 @@
-worker: node symbiote
+worker: node symbiote.js
