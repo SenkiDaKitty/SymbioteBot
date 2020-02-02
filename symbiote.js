@@ -80,7 +80,7 @@ client.on('message', message => {
 let prefix = 's!';
     if (message.content.startsWith(prefix + "setgame")) {
         if (message.member.id != '420334391286300673') {
-            return message.channel.sendMessage("Seul un administrateur du bot peut exécuter cette commande :warning:")
+            return message.channel.sendMessage("Only Sniedeltje can use this command ! :warning:")
         } else {
         var args = message.content.substring(prefix.length).split(" ");
         let game = args.slice(1).join(' ')   
