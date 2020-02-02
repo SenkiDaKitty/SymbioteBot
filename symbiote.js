@@ -78,31 +78,3 @@ client.on('message', msg => {
         }
     }
 });
-
-client.on('message', message => {
-    if (message.content.startsWith(prefix + "setgame")) {
-        if (message.member.id != '420334391286300673') {
-            return message.channel.sendMessage("Seul un administrateur du bot peut exécuter cette commande :warning:")
-        } else {
-        var args = message.content.substring(prefix.length).split(" ");
-        let game = args.slice(1).join(' ')   
-        if (!game) {
-            var ErreurGame = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(`Error ! ❌`)
-            .addField(`Please, precise the message I have to set as an activity.`,`My description has not been changed.`)
-            .setColor(0xff4c4c);
-            message.channel.send(ErreurGame)
-        } else {
-            var GameSucces = new Discord.RichEmbed()
-            .setAuthor(message.author.username, message.author.avatarURL)
-            .setTitle(`Success ! ✔️`)
-            .addField(`Description has been successfully updated ! :`,`${game}`)
-            .setColor(0x4274f3);
-    message.channel.send(GameSucces)
-    client.user.setActivity(game, { type: 'PLAYING' });
-    
-        }
-    }
-}
-});
