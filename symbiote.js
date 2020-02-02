@@ -39,7 +39,6 @@ client.on('message', msg => {
             .addField('Here is the suggestion :', message)
             .setColor(0xff4c4c);
         client.channels.get('673331768182702081').send(suggestion)
-        client.user.setActivity("Made by : ChillwSenki | prefix : s!", { type: 'PLAYING' });
         return;
         }
     }
@@ -73,7 +72,6 @@ client.on('message', msg => {
             .addField('Here is the report ! :', message)
             .setColor(0xff4c4c);
         client.channels.get('673331768182702081').send(report)
-        client.user.setActivity("Made by : ChillwSenki | prefix : s!", { type: 'PLAYING' });
         return;
         }
     }
