@@ -6,9 +6,9 @@ const client = new Discord.Client({
     
 });
 
-console.log(auth.token)
+console.log(process.env.BOT_TOKEN)
 
-client.login(auth.token);
+client.login(process.env.BOT_TOKEN);
 
 client.on('message', msg => {
 
