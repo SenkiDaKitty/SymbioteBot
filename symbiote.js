@@ -9,7 +9,10 @@ const client = new Discord.Client({
 console.log(process.env.BOT_TOKEN)
 
 client.login(process.env.BOT_TOKEN);
-
+    console.log('login..');
+    client.user.setActivity(`The Symbiote Guild | s!suggest & s!report`, { type: "WATCHING" });
+    client.user.setStatus('dnd');
+    console.log('ready!');
 client.on('message', msg => {
 
 
