@@ -12,7 +12,7 @@ client.login(process.env.BOT_TOKEN);
 client.on('ready', () => {
 console.log('login..');
 client.user.setActivity(`The Symbiote Guild | s!suggest & s!report`, { type: "WATCHING" });
-client.user.setStatus('dnd');
+client.user.setStatus('online');
 console.log('ready!');
 });
 
