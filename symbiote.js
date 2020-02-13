@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const auth = require('./auth.json');
 const client = new Discord.Client({
     commandPrefix: auth.prefix,
-    autorun: true
+    autorun: false
     
 });
 
